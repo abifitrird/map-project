@@ -1,20 +1,24 @@
 import React, { useEffect } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 
-const MapComponent = () => {
-  useEffect(() => {
-    const loader = new Loader({
-      version: 'weekly',
-    });
-    let map;
+const MapComponent = (props) => {
+  const { latitude, longitude } = props;
 
-    loader.load().then(() => {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 15,
-      });
+  console.log({ latitude, longitude });
+
+  useEffect(() => {
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: { lat: latitude, lng: longitude },
     });
-  }, []);
+
+    new google.maps.Marker({
+      position: { lat: latitude, lng: longitude },
+      map,
+      title: 'Welcome To The Map Project!',
+    });
+  }, [latitude, longitude]);
+
   return <div className='w-full h-full' id='map'></div>;
 };
 

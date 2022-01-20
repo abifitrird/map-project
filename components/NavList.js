@@ -1,14 +1,18 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const NavList = () => {
+const NavList = (props) => {
+  const { setLatitude, setLongitude } = props;
+
   const [expandMenu, setExpandMenu] = useState(0);
-  const chooseMenu = (menu) => {
+  const chooseMenu = (menu, lat, lng) => {
     if (expandMenu !== menu) {
       setExpandMenu(menu);
     } else {
       setExpandMenu(0);
     }
+    setLatitude(lat);
+    setLongitude(lng);
   };
 
   const [areaList, setAreaList] = useState([]);
@@ -44,7 +48,9 @@ const NavList = () => {
             >
               <div
                 className='flex justify-between'
-                onClick={() => chooseMenu(item.id)}
+                onClick={() =>
+                  chooseMenu(item.id, item.latitude, item.longitude)
+                }
               >
                 <p>{item.name}</p>
                 {item.districts.length > 0 && (
