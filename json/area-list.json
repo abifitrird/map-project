@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "Merlion",
+    "latitude": 1.28692,
+    "longitude": 103.85457,
+    "districts": []
+  },
+  {
+    "id": 7,
+    "name": "Marina Bay Sands",
+    "latitude": 1.283099,
+    "longitude": 103.860295,
+    "districts": [
+      "ArtScience Museum",
+      "Marina Bay Sands Skypark",
+      "Double Helix Bridge"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Gardens By The Bay",
+    "latitude": 1.28179,
+    "longitude": 103.863954,
+    "districts": ["District A", "District B", "District C"]
+  },
+  {
+    "id": 9,
+    "name": "Chinatown",
+    "latitude": 1.284193,
+    "longitude": 103.843362,
+    "districts": ["District D", "District E", "District F"]
+  },
+  {
+    "id": 2,
+    "name": "Asian Civilisations Museum",
+    "latitude": 1.287466,
+    "longitude": 103.851424,
+    "districts": []
+  },
+  {
+    "id": 3,
+    "name": "Clarke Quay",
+    "latitude": 1.290555,
+    "longitude": 103.846188,
+    "districts": []
+  },
+  {
+    "id": 4,
+    "name": "Fort Canning Park",
+    "latitude": 1.295526,
+    "longitude": 103.845331,
+    "districts": []
+  },
+  {
+    "id": 6,
+    "name": "Singapore Flyer",
+    "latitude": 1.289332,
+    "longitude": 103.863152,
+    "districts": []
+  },
+  {
+    "id": 5,
+    "name": "Orchard Road",
+    "latitude": 1.302279,
+    "longitude": 103.837399,
+    "districts": []
+  }
+]

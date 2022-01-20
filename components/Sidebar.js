@@ -56,9 +56,10 @@ const Sidebar = () => {
           return (
             <div
               key={item.title}
-              className={`w-full cursor-pointer grid justify-items-center p-3 gap-y-2 text-center break-normal ${
+              className={`w-full cursor-pointer grid justify-items-center p-3 gap-y-2 text-center break-normal border-b ${
                 item.isActive ? 'active-bar' : 'accent-slate-50'
               }`}
+              style={{ borderColor: '#242832' }}
               onClick={() => chooseMenu(item.title)}
             >
               <img src={item.imageUrl} alt={item.description} />

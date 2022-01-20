@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.active-bar {
+  background: #72cdd2;
+  color: white;
+}
+
+.img-icon {
+  filter: invert(-100%);
+}
