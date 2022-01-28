@@ -31,14 +31,14 @@ export default function Home() {
         </div>
         <div className='w-3/4 flex flex-col'>
           <Navbar />
-          {/* <div className='relative'> */}
-          <MapComponent
-            latitude={latitude}
-            longitude={longitude}
-            label={markerLabel}
-          />
-          {/* <AreaOverview /> */}
-          {/* </div> */}
+          <div className='relative'>
+            <MapComponent
+              latitude={latitude}
+              longitude={longitude}
+              label={markerLabel}
+            />
+            <AreaOverview />
+          </div>
         </div>
       </div>
     </div>
